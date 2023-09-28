@@ -23,10 +23,13 @@ int partition(int *array, int low, int high, size_t size)
 		if (array[y] < pivot)
 		{
 			x++;
-			temp = array[x];
-			array[x] = array[y];
-			array[y] = temp;
-			print_array(array, size);
+			if (x != y)
+			{
+				temp = array[x];
+				array[x] = array[y];
+				array[y] = temp;
+				print_array(array, size);
+			}
 		}
 	}
 
