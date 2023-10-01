@@ -35,5 +35,8 @@ void heap_sort(int *array, size_t size);
 void build_heap(int *array, size_t size);
 void heapify(int *array, size_t size, size_t root, size_t total_size);
 void swap(int *a, int *b);
+void radix_sort(int *array, size_t size);
+void counting_sort2(int *array, size_t size, int exp);
+int get_max(int *array, size_t size);
 
 #endif /* SORT_H */
